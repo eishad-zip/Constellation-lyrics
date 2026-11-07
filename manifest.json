@@ -1,0 +1,7 @@
+{
+  "name": "Constellation",
+  "icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.6'><path d='M5 17l5-8 5 5 5-9'/><circle cx='5' cy='17' r='1.6' fill='currentColor'/><circle cx='10' cy='9' r='1.6' fill='currentColor'/><circle cx='15' cy='14' r='1.6' fill='currentColor'/><circle cx='20' cy='5' r='1.6' fill='currentColor'/></svg>",
+  "active-icon": "<svg width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.2'><path d='M5 17l5-8 5 5 5-9'/><circle cx='5' cy='17' r='2' fill='currentColor'/><circle cx='10' cy='9' r='2' fill='currentColor'/><circle cx='15' cy='14' r='2' fill='currentColor'/><circle cx='20' cy='5' r='2' fill='currentColor'/></svg>",
+  "subfiles": [],
+  "subfiles_extension": []
+}
