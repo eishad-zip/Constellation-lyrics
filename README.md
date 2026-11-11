@@ -1,33 +1,23 @@
-# Constellation Lyrics
+# Constellation Lyrics (Optimized Edition)
 
-A custom [Spicetify](https://spicetify.app) app that shows synced lyrics in two styles:
+Updated Spicetify Custom App featuring:
+- **Removed**: ASCII Knight, ASCII Cosmos, and Autonomous engine (cleaned ~80KB of heavy SDF/raymarch bloat).
+- **Flow Lyric Instrumental Animation**: Minimal Apple Music-style audio wave pill between lines when an instrumental break occurs.
+- **Gemini AI Generative Background**: Uses Gemini 2.5 Flash to analyze genre, mood, and aesthetic of any song and generate custom fluid canvas backgrounds (with local smart classifier fallback).
+- **Apple-Style UI**: Translucent frosted glass top pill bar and Settings sheet with iOS-style segmented controls and switches.
+- **Dismiss on Background Touch**: Tapping or clicking outside the Settings or Music Drawer immediately closes them.
+- **Queue & Saved Music Window**: Browse upcoming tracks and search through your Liked Songs with one-click play.
 
-- **Constellation** – words appear as stars across the screen, linked by shooting-star trails, with a camera that zooms on choruses.
-- **Flow** – the full lyrics scroll smoothly and each word fills letter by letter in time with the singer.
+---
 
-## Features
-- Lyrics from Spotify, LRCLIB, lrcmux, Better Lyrics, NetEase, LrcApi, Musixmatch or a custom URL
-- Word-level sync where the source provides it, with a smoothed playback clock
-- Many backgrounds: album blur, galaxies, artist themes, ASCII scenes, autonomous worlds
-- Background brightness and dim controls
-- Flow animations: Glow, Wave, Pop, Rise, Soft fill, with size, glow, scroll and blur controls
-- Performance profiles for low-RAM machines
+## Files Provided
+- `index.js`: Main Spicetify Custom App script.
+- `style.css`: Apple-style frosted glass UI and minimal instrumental animation styles.
+- `manifest.json`: Spicetify app manifest.
 
-## Install
-1. Install Spicetify and make sure it works.
-2. Copy this folder to your Spicetify `CustomApps` directory:
-   - Windows: `%appdata%\spicetify\CustomApps\constellation-lyrics`
-   - Linux/macOS: `~/.config/spicetify/CustomApps/constellation-lyrics`
-3. Run:
-   ```
-   spicetify config custom_apps constellation-lyrics
-   spicetify apply
-   ```
-4. Open **Constellation** from the Spotify sidebar, then **Settings → Style** to pick a lyric style.
-
-## Controls
-- `F` – fullscreen
-- `[` / `]` – shift lyric timing by 0.05 s
-
-## Credits
-The letter-by-letter sync idea is inspired by [Liquid Lyrics](https://github.com/NMWplays/Liquid-Lyrics) (AGPL-3.0); the code here was written independently.
+## How to Test or Install (When You Are Ready)
+Copy the 3 files into your Spicetify CustomApps directory:
+```powershell
+Copy-Item -Path ".\*" -Destination "$env:APPDATA\spicetify\CustomApps\constellation\" -Recurse -Force
+spicetify apply
+```
